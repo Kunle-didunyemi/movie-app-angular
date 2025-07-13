@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-main: #000;
+  --bg-card: #141414;
+  --text-main: #fff;
+  --text-secondary: #bbb;
+  --accent: #e50914;
+}
+
+html,
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  min-height: 100vh;
+  font-family: "Segoe UI", "Roboto", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 4px;
+}
+
+/* Remove default input/button backgrounds */
+input,
+button,
+select,
+textarea {
+  background: #181818;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+/* Remove blue tap highlight on mobile */
+body,
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
